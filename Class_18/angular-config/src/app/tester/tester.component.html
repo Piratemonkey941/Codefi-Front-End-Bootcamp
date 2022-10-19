@@ -1,0 +1,31 @@
+<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+  <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon>dialpad</mat-icon>
+    <span>Redial</span>
+  </button>
+  <button mat-menu-item disabled>
+    <mat-icon>voicemail</mat-icon>
+    <span>Check voice mail</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>notifications_off</mat-icon>
+    <span>Disable alerts</span>
+  </button>
+</mat-menu>
+
+<!-- <mat-menu #animals="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
+  <button mat-menu-item [matMenuTriggerFor]="invertebrates">Invertebrates</button>
+</mat-menu>
+
+<mat-menu #vertebrates="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="fish">Fishes</button>
+  <button mat-menu-item [matMenuTriggerFor]="amphibians">Amphibians</button>
+  <button mat-menu-item [matMenuTriggerFor]="reptiles">Reptiles</button>
+  <button mat-menu-item>Birds</button>
+  <button mat-menu-item>Mammals</button>
+</mat-menu> -->
+<!-- <mat-slider min="1" max="100" step="1" value="50"></mat-slider> -->
