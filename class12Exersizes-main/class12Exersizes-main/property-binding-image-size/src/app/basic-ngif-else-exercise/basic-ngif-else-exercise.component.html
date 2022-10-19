@@ -1,0 +1,5 @@
+<p *ngIf="isShowContent; else showElse">If isShowContent is true, show me!</p>
+
+<ng-template #showElse>
+  <p>Use Else to show me!</p>
+</ng-template>

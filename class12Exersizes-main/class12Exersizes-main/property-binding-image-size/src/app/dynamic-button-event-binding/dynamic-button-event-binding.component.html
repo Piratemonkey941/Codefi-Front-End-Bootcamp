@@ -1,0 +1,5 @@
+<input type="text" [disabled]= "isDisabled">
+<hr>
+<button class="btn btn-danger" (click)="toggleDisable()">Click me to change the value of isDisabled!</button>
+
+<p>{{ isDisabled ? 'Currently Disabled': 'Not Disabled'}}</p>

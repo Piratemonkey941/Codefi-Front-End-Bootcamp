@@ -1,0 +1,140 @@
+body, .jumbotron {padding: 30px;}
+
+body {
+
+    background-image: url('resources/ocean.jpg');
+    background-size: cover;
+}
+
+.content {
+    font-size: 19px;
+    line-height: 1.5;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+}
+.floater {
+    background: #FFF ;
+    
+    transition: 0.3 cubic-bezier(0.175, 0.885, 0.32, 1.4) all;
+    margin-bottom: 30px;
+    z-index: 11;
+
+}
+
+.floater input[type=text]{
+    padding: 30px 20px;
+    border: none;
+    box-shadow: none;
+    font-size: 14px;
+    transition: 0.3 cubic-bezier(0.175, 0.885, 0.32, 1.4) all;
+}
+
+
+.floater-bottom {
+    padding: 6px 10px 8px;
+    text-align: right;
+    border-top: 1px solid  #DDD;
+}
+
+.floater-bottom button {
+    padding: 4px 8px;
+    font-size: 10px;   
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.20);
+    width: 100%;
+    height:100% ;
+    opacity: 0;
+    transition: 0.5 ease;
+    z-index: 10;
+    pointer-events: none;
+
+}
+
+body.show-floater .floater {
+    transform: scale(1.1);
+}
+
+body.show-floater .floater input[type=text]{
+    padding:50px 20px ;
+    font-size: 18px;
+
+}
+body.show-floater .overlay{
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* ================================= */
+
+.bookmarks-list {
+    position: relative;
+    z-index: 9;
+}
+
+.bookmark {
+    color: rgb(37, 37, 37);
+    display: flex;
+    position: relative;
+    background: rgb(204, 204, 204);
+    padding: 20px;
+    transition: 0.3s ease all;
+    border-bottom: 1px solid #DDD;
+    font-size: 16 ;
+    text-decoration: none;
+}
+
+.bookmark:hover {
+    color: rgba(0, 195, 255, 0.781);
+    text-decoration: none;
+}
+
+.bookmark:first-child{
+   border-top-left-radius: 5px; 
+   border-top-right-radius: 5px; 
+}
+.bookmark:last-child{
+   border-top-left-radius: 5px; 
+   border-top-right-radius: 5px; 
+   border-bottom: 0;
+}
+
+.bookmark .img {
+
+    background-color: #DDD;
+    border-radius: 3px;
+    background-image: url(https://scontent-ord5-1.xx.fbcdn.net/v/t1.6435-9/72653742_10156495887546937_1416463034351616000_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=174925&_nc_ohc=H3BTwslbMHYAX8jTUkI&_nc_ht=scontent-ord5-1.xx&oh=00_AT_InOcXlbtF3e2bEjZXG6xA5Y45MA3ogO98K3wq8RZZZQ&oe=633456F5);
+    background-size: cover;
+    background-position: top center;
+    width: 65px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.bookmark .title {
+    display: flex;
+    align-items: center;
+}
+
+.bookmark .fa-solid {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #EEE;
+    font-size: 12px;
+    transition: 0.3s ease color;
+    cursor: pointer;
+}
+
+.bookmark:hover .fa-solid{
+    color: #AAA;
+    
+}
+
