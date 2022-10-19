@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordion</title>
+
+   <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+<script src="index.js" defer></script>
+
+    <style>
+        body, .jumbotron  { padding: 30px; }
+
+        html {
+            overflow-y: scroll;
+        }
+
+       body {
+        background: #EFEFEF;
+       }
+
+       ul {
+        margin-bottom: 0;
+       }
+
+       .accordion {
+        background: #FFF ;
+        border-radius: 5px;
+        padding: 30px;
+       }
+
+       .question {
+        border-top: 1px solid #EEE;
+        padding: 20px;
+        cursor: pointer;
+        position: relative;
+       }
+
+       .question h2 {
+       font-size: 20px;
+       margin: 0;
+       color: #C00C00;
+       }
+       .question .glyphicon {
+      position: absolute;
+      right: 20px;
+      top: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      color: #C00C00;
+      transition: 1.5s cubic-bezier( 0.175, 0.885, 0.32, 1.275) all ;
+       }
+
+       .answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: 1.5s cubic-bezier( 0.175, 0.885, 0.32, 1.275) all ;
+       }
+    
+       .answer p {
+        padding: 20px;
+       }
+
+       .accordion li.open .question .glyphicon{
+        transform: rotate(180deg);
+       }
+
+       .accordion li.open .answer {
+        max-height: 150px;
+       }
+    </style>
+</head>
+<body>
+    
+<div class="container">
+
+    <div class="accordion">
+        <ul class="list-unstyled">
+            <li>
+                <div class="question">
+                    <h2>Will I Be Rich</h2>
+                    <span class="glyphicon glyphicon-chevron-down "></span>
+                </div>
+                
+                <div class="answer">
+                    <p>Absolutly! Lorem ipsum, dolor sit amet consectetur 
+                        adipisicing elit. Totam facere porro rerum vel 
+                        perferendis deleniti animi suscipit voluptate 
+                        recusandae et officia obcaecati accusantium dolore, 
+                        at atque. Deserunt ipsum reprehenderit sequi!</p>
+                </div>
+            </li>
+
+            <li>
+                <div class="question">
+                    <h2>Whats for Dinner</h2>
+                    <span class="glyphicon glyphicon-chevron-down "></span>
+                </div>
+                <div class="answer">
+                    <p>Whatever you want! Lorem ipsum, dolor sit amet consectetur 
+                        adipisicing elit. Totam facere porro rerum vel 
+                        perferendis deleniti animi suscipit voluptate 
+                        recusandae et officia obcaecati accusantium dolore, 
+                        at atque. Deserunt ipsum reprehenderit sequi!</p>
+                </div>
+            </li>
+
+            <li>
+                <div class="question">
+                    <h2>Is JavaScript Awesome</h2>
+                    <span class="glyphicon glyphicon-chevron-down "></span>
+                </div>
+                <div class="answer">
+                    <p>Yes! Lorem ipsum, dolor sit amet consectetur 
+                        adipisicing elit. Totam facere porro rerum vel 
+                        perferendis deleniti animi suscipit voluptate 
+                        recusandae et officia obcaecati accusantium dolore, 
+                        at atque. Deserunt ipsum reprehenderit sequi!</p>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+</body>
+</html>

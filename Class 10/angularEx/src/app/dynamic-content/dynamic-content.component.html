@@ -1,0 +1,14 @@
+<h1>Welcome {{userName}}</h1>
+
+<h2>Dynamic Content Exersize</h2>
+<p> Below is a form you can enter you name in!</p>
+
+  <!-- <input type="text" [(ngModel)]="name"> -->
+  <p>{{ name }}</p>
+
+
+  <input type="text"
+  class="form-control"
+  [(ngModel)]="userName">
+
+  <p >Username is {{ userName }}</p>
